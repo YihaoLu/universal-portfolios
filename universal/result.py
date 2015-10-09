@@ -359,7 +359,7 @@ class ListResult(list, PickleMixin):
             self[0].asset_equity.plot(colormap=plt.get_cmap('jet'), **kwargs)
 
         # plot portfolio again to highlight it
-        kwargs['color'] = 'blue'
+        kwargs['c'] = 'b'#'blue'
         portfolio.plot(linewidth=3., **kwargs)
 
         return ax
